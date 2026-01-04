@@ -4,14 +4,19 @@
     padding: 0;
     box-sizing: border-box;
     color: #fff;
+    font-family: "Plain Light";
 }
 html, body{
     height: 100%;
     width: 100%;
 }
+.line{
+    background-color: red;
+    height: fit-content;
+}
 .line h1{
-    font-size: 6vw;
-    font-weight: 500;
+    font-size: 6.5vw;
+    font-weight: 900;
     text-transform: uppercase;
 }
 #loader{
