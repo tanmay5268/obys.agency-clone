@@ -4,8 +4,9 @@ function loadingAnimation() {
     tl.from(".line h1", {
         y: 150,
         stagger: 0.25,
-        duration: 0.6,
-        delay: 0.5
+        duration: 0.8,
+        delay: 0.5,
+        ease: "power4.out"
     })
     tl.from("#line1-part1", {
         opacity: 0,
@@ -27,14 +28,13 @@ function loadingAnimation() {
     tl.to("#loader", {
         opacity: 0,
         duration: 0.5,
-        delay: 1,
-        
+        delay: 0.5,
     })
     tl.from("#page1", {
         delay: 0.2,
         y: 1600,
-        duration: 0.6,
-        ease: Power4
+        duration: 1.2,
+        ease: "power4.out"
     })
     tl.to("#loader", {
         display: "none",
@@ -42,9 +42,11 @@ function loadingAnimation() {
     tl.from("#nav", {
         opacity:0,
     })
-    tl.from("#hero1 h1, #hero2 h1, #hero3 h2,#hero3 h3, #hero4 h1", {
-        y: 300,
-        stagger:0.05
+    tl.from("#hero1 h1, #hero2 h1,#hero3, #hero4 h1", {
+        y: 500,
+        stagger: 0.1,
+        duration: 0.8,
+        ease: "power4.out"
     })
     
 }
@@ -55,7 +57,8 @@ function cursorAnimation() {
         gsap.to("#crsr", {
             left: dets.x,
             top: dets.y,
-
+            duration: 0.2, // Small duration for smoothness
+            ease: "power2.out"
         })
     });
 

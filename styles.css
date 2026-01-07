@@ -18,7 +18,7 @@ html, body{
     border: 1px solid #ffffff;
     border-radius: 50%;
     position : fixed;
-    z-index: 999;
+    z-index: 9999;
     mix-blend-mode: difference;
     transform: translate(-50%,-50%);
     pointer-events: none;
@@ -97,7 +97,7 @@ html, body{
     height: 100%;
     width: 100vw;
     background-color: #030303;
-    z-index: 9999;
+    z-index: 999;
     padding: 25vh 10vw;
 }
 #main{
@@ -135,7 +135,7 @@ html, body{
     margin-left:27%;
     overflow: hidden;
     display: flex;
-    z-index: 9999;
+    z-index: 99;
     align-items: center;
     position: relative;
 }
@@ -146,32 +146,75 @@ html, body{
     margin-bottom: 2vh;
 }
 .hero h1{
-    font-size: 8vw;
+    font-size: 7.2vw;
     font-weight: 600;
     text-transform: uppercase;
-    line-height: 7vw;
+    line-height: 6.5vw;
 }
 
 .hero h2{
     border-bottom: 0.5vw solid #fff;
     padding-bottom: 0.5vw;
-    font-size: 8vw;
+    font-size: 7.2vw;
     font-weight: 500;
     text-transform: uppercase;
-    line-height: 7.2vw;
+    line-height: 6.5vw;
     text-align: left;
-    transition: all 0.3s ease;
+    transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .hero h3{
     padding-bottom: 1.5vh;
     padding-left:0.3vw;
-    font-size: 7.8vw;
+    font-size: 7.2vw;
         font-weight: 500;
         text-transform: uppercase;
-        line-height: 7vw;
+        line-height: 6.5vw;
 }
 .hero h2:hover{
     -webkit-text-stroke: 1px #fff;
     color: transparent;
     border-bottom: 0.5vw solid #ffffff00;
 }
+
+#page2{
+    padding-top: 17vh;
+    position : relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+}
+#video-container{
+    height: 66vh;
+    width: 71vw;
+    left: 27%;
+    position: relative;
+    background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
+}
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#video-container #thumbnail{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+#video-cursor{
+    background-color: #FFA63D;
+    height:16vh;
+    width: 16vh;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 3;
+    top: -10%;
+    left: 80%;
+}
+#video-cursor svg{
+    padding: 35%;
+}
+/* #FFA63D */
