@@ -70,3 +70,4 @@ function cursorAnimation() {
     });
 }
 cursorAnimation();
+
